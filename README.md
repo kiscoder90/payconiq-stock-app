@@ -1,5 +1,5 @@
 # payconiq-stock-app
-Design Assumption: 
+Design Assumption/Thought process while designing: 
 1. Stock class and List 
   1.1 have id (Long), name (String), current value (double), currency and last updated time (timestamp) attributes.
   1.2 Compant Name is considered to be unique. This is a general assumption as in practical scenario no two company has same name. 
@@ -20,7 +20,10 @@ Design Assumption:
 4. Unit test cases are there for few scenarios - 
   4.1 Update stock details (both positive and negative scenario are tested)
   4.2 Add stock details (both positive and negative scenario are tested)
-  
-5. Due to time constarint, not able to build the UI component. Instead of that added a swagger UI for visualization. Swagger is accessible by http://<hostname>:8080/swagger-ui.html by this url. If locally deployed hostname should be "localhost".
+ 
+What is not there:
+1. Due to time constarint, not able to build the UI component. Instead of that added a swagger UI for visualization. Swagger is accessible by http://<hostname>:8080/swagger-ui.html by this url. If locally deployed hostname should be "localhost".
+
+2. A service gateway is missing where all the requests to controller should be validated (or authenticated) before allowing them to the controller.
   
  Please let me know for further queries/explanations.
